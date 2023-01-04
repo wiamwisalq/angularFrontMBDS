@@ -1,0 +1,40 @@
+/* p{
+    color: blue;
+}
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    padding: 10px;
+}
+tr:hover{
+    background-color: aqua;
+} */
+
+/* .rendu{
+    color: aquamarine;
+    border: 2px solid yellow;
+    padding: 10px;
+    background-color: lightblue;
+}
+.nonrendu{
+    color: red;
+    border: 2px dashed yellow;
+} */
+
+
+.form {
+    display:flex;
+    flex-direction: column;
+    margin:5px;
+ }
+ 
+ .container{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .ajouterBtn{
+    align-self: flex-end;
+ }

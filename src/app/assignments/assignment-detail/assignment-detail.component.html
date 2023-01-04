@@ -1,0 +1,17 @@
+<p>Assignment de details (grand-child, Le petit fils)</p>
+<p *ngIf="assignementTrensmis">
+    Hello : {{assignementTrensmis}}
+</p>
+
+<mat-card *ngIf="assignementTrensmis">
+    <mat-card-content>
+        <mat-card-title>{{assignementTrensmis.nom}}</mat-card-title>
+        <mat-card-subtitle>{{assignementTrensmis.dateDeRendu}}</mat-card-subtitle>
+        
+        <mat-card-actions *ngIf="!assignementTrensmis.rendu">
+            <mat-checkbox (click)="assignementTrensmis.rendu=true">Devoir rendu</mat-checkbox>
+        </mat-card-actions>
+        <button mat-flat-button color="accent" (click)="onAddAssignmentBtnClick(assignementTrensmis)" class="ajouterBtn">   Supprimer Assignment </button>
+    </mat-card-content>
+</mat-card>
+  
